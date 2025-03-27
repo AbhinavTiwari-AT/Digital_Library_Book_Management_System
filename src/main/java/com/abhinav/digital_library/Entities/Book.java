@@ -20,8 +20,22 @@ public class Book {
 	@NotBlank(message = "Author of Book cannot be Empty!!")
 	private String author;
 	
+    @NotBlank(message = "Genre cannot be Empty!!")
 	private String genre;
 	
 	private BookStatus status;
+	
+	//for unit testing
+	@Override
+	public String toString()
+	{
+	    return "Book{" +
+	            "bookId='" + bookId + '\'' +
+	            ", title='" + title + '\'' +
+	            ", author='" + author + '\'' +
+	            ", genre='" + genre + '\'' +
+	            ", status=" + status +
+	            '}';
+	}
 
 }
