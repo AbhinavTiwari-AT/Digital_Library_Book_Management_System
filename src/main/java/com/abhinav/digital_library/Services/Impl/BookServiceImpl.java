@@ -7,6 +7,7 @@ import java.util.UUID;
 import org.springframework.stereotype.Service;
 
 import com.abhinav.digital_library.Entities.Book;
+import com.abhinav.digital_library.Exceptions.ResourceNotFoundException;
 import com.abhinav.digital_library.Services.BookService;
 
 @Service
