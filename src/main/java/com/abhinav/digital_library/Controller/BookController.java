@@ -32,6 +32,11 @@ public class BookController {
 	 @Autowired
 	 private ApplicationContext context;
 	 
+	 //home api
+	 @GetMapping("/home")
+	 public ResponseEntity<String> homeApi() {
+	     return ResponseEntity.ok("Welcome to the Digital Library Manage your books efficiently.");
+	 }
 	
 	//add books
 	@PostMapping
