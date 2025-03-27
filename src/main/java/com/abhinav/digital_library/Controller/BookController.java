@@ -32,11 +32,6 @@ public class BookController {
 	 @Autowired
 	 private ApplicationContext context;
 	 
-	 @GetMapping("/home")
-	 public String home() {
-	        return "Welcome to Digital Library App!";
-	   }
-
 	
 	//add books
 	@PostMapping
