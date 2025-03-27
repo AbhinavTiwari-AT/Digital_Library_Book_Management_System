@@ -18,6 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.abhinav.digital_library.Entities.Book;
 import com.abhinav.digital_library.Services.BookService;
 
+import jakarta.validation.Valid;
+
 
 
 @RestController
@@ -33,7 +35,7 @@ public class BookController {
 	
 	//add books
 	@PostMapping
-	public ResponseEntity<Book> addBook(@RequestBody Book book)
+	public ResponseEntity<Book> addBook(@Valid @RequestBody Book book)
 	{
 	      Book added = bookService.addBook(book);
 	      return new ResponseEntity<>(added,HttpStatus.OK);
@@ -65,7 +67,7 @@ public class BookController {
 	
 	//update books
 	@PutMapping("/{bookId}")
-	public ResponseEntity<Book> updateBook(@PathVariable String bookId, @RequestBody Book book)
+	public ResponseEntity<Book> updateBook(@Valid @PathVariable String bookId, @RequestBody Book book)
 	{
 		Book update = bookService.updateBook(bookId, book);
 		return new ResponseEntity<>(update,HttpStatus.OK);
