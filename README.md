@@ -2,7 +2,7 @@
 
 ##  **Deployed Link**
   Access the live project here:  
- **[Digital Library System Deployment](YOUR_DEPLOYMENT_LINK_HERE)**
+ **Digital Library System Deployment :- https://loyal-adaptation-production.up.railway.app/books/home**
 
 
 ## Objective
@@ -56,6 +56,7 @@ When a requested book is not found, a **custom exception i.e ResourseNotFound** 
 ## API Endpoints
 | **Method** | **Endpoint**       | **Description** |
 |------------|-------------------|----------------|
+|**GET**     | `/books/home`     | For home page message |
 | **POST**   | `/books`          | Add a new book |
 | **GET**    | `/books`          | Retrieve all books |
 | **GET**    | `/books/{id}`     | Get a book by its ID |
