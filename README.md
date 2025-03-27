@@ -48,8 +48,8 @@ Develop an application system to enable librarians to efficiently **add, update,
 ### 1. global exception handling
 Our application includes a **global exception handling mechanism** to ensure proper error responses when an invalid request is made.
 
-## 2. Custom Exception - `ResourceNotFoundException`
-When a requested book is not found, a **custom exception** is thrown with a meaningful message.
+## 2. Custom Exception
+When a requested book is not found, a **custom exception i.e ResourseNotFound** is thrown with a meaningful message.
 
 ---
 
