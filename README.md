@@ -2,7 +2,7 @@
 
 ##  **Deployed Link**
   Access the live project here:  
- **Digital Library System Deployment :- https://loyal-adaptation-production.up.railway.app/books/home**
+ **Digital Library System Deployment :- https://loyal-adaptation-production.up.railway.app/books/home  & https://loyal-adaptation-production.up.railway.app**
 
 
 ## Objective
